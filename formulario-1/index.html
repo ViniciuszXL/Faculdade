@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div class="conteudo formulario">
+		<h1>FORMULÁRIO</h1>
+	
+		<form method="post" id="login_form" onSubmit="return enviarDados();">
+            <div class="login-form">
+                <div class="conteudo formulario-conteudo">
+					<span>Nome completo: </span>
+					<input type="text" id="fullname" placeholder="Nome completo"/>
+				</div>
+					
+                <div class="conteudo formulario-conteudo">
+					<span>Email: </span>
+					<input type="email" id="email" placeholder="Email"/>
+				</div>
+				
+				<div class="conteudo formulario-conteudo">
+					<span>Endereço: </span>
+					<input type="text" id="address" placeholder="Endereço"/>
+				</div>
+				
+				<div class="conteudo formulario-conteudo">
+					<span>Celular: </span>
+					<input type="text" id="celular" placeholder="Celular"/>
+				</div>
+				
+				<div class="conteudo formulario-conteudo">
+					<span>Mensagem: </span>
+					<textarea rows="10" cols="52" id="message"></textarea>
+				</div>
+				
+				<input type="submit" value="Enviar dados">
+            </div>
+        </form>
+	</div>
+</body>
+
+</html>
