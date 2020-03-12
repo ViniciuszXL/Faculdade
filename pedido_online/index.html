@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Formulário Online</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div class="conteudo formulario">
+		<form method="post" id="login_form">
+            <div class="login-form">
+				<h1>Formulário de pedido online</h1>
+			
+                <div class="conteudo formulario-conteudo">
+					<span>Nome completo: </span>
+					<input type="text" id="fullname"/>
+				</div>
+				
+				<div class="conteudo formulario-conteudo">
+					<span>Endereço: </span>
+					<input type="text" id="endereco"/>
+				</div>
+					
+                <div class="conteudo formulario-conteudo">
+					<span>Email: </span>
+					<input type="email" id="email"/>
+				</div>
+				
+				<div class="conteudo formulario-conteudo">
+					<span>Cidade: </span>
+					<select name="uf" id="uf">
+						<option value="">Selecione</option>
+						<option value="AC">AC</option>
+						<option value="AL">AL</option>
+						<option value="AM">AM</option>
+						<option value="AP">AP</option>
+						<option value="BA">BA</option>
+						<option value="CE">CE</option>
+						<option value="DF">DF</option>
+						<option value="ES">ES</option>
+						<option value="GO">GO</option>
+						<option value="MA">MA</option>
+						<option value="MG">MG</option>
+						<option value="MS">MS</option>
+						<option value="MT">MT</option>
+						<option value="PA">PA</option>
+						<option value="PB">PB</option>
+						<option value="PE">PE</option>
+						<option value="PI">PI</option>
+						<option value="PR">PR</option>
+						<option value="RJ">RJ</option>
+						<option value="RN">RN</option>
+						<option value="RS">RS</option>
+						<option value="RO">RO</option>
+						<option value="RR">RR</option>
+						<option value="SC">SC</option>
+						<option value="SE">SE</option>
+						<option value="SP">SP</option>
+						<option value="TO">TO</option>
+					 </select>
+				</div>
+				
+				<div class="conteudo formulario-conteudo">
+					<span>Data Nasc.: </span>
+					<div class="data-nasc">
+						<input type="text" id="dia" maxlength="2">
+						<p>/</p>
+						<input type="text" id="mes" maxlength="2">
+						<p>/</p>
+						<input type="text" id="ano" maxlength="4">
+					</div>
+				</div>
+				
+				<h1>Dados da compra</h1>
+				<div class="conteudo formulario-conteudo">
+					<span>Tipo de Pagto:</span>
+					
+					<div class="tipo-pagto">
+						<input type="radio" id="pagto" name="Pagto" value="V" checked>
+						<label for="pagto">À Vista</label>
+					</div>
+					
+					<div class="tipo-pagto">
+						<input type="radio" id="pagto" name="Pagto" value="P">
+						<label for="pagto">Pagto em 2x</label>
+					</div>
+				</div>
+				
+				<div class="conteudo formulario-conteudo">
+					<span>Produto: </span>
+					
+					<div class="produto-conteudo">
+						<select name="product" id="product">
+							<option value="Selecione" id="-1">Selecione</option>
+							<option value="MOUSE-MS" id="1">Mouse Microsoft</option>
+							<option value="CX-AC" id="2">Caixa Acústica</option>
+							<option value="ESTB" id="3">Estabilizador</option>
+						 </select>
+					</div>
+				</div>
+				
+				<div class="conteudo formulario-conteudo">
+					<span>Cor: </span>
+					
+					<div class="cor-tipo">
+						<input type="radio" id="cor" name="Branca" value="Branca" checked>
+						<label for="cor">Branca</label>
+					</div>
+					
+					<div class="cor-tipo">
+						<input type="radio" id="cor" name="Bege" value="Bege" checked>
+						<label for="cor">Bege</label>
+					</div>
+				</div>
+				
+				<input type="submit" id="enviar" value="Enviar dados" onclick="return enviarDados();">
+				<input type="submit" id="apagar" value="Apagar" onclick="return removerForm();">
+            </div>
+        </form>
+	</div>
+</body>
+
+</html>
